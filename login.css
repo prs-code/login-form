@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400&display=swap');
+
+* {
+    font-family: 'Roboto Slab', serif;
+    box-sizing: border-box;
+    font-size: 22px;
+}
+
+form {
+    border-left: 3px solid darkgrey;
+    border-bottom: 3px solid darkgrey;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    width: 700px;
+    margin: 50px auto;
+    /* display: none; */
+    z-index: 1; 
+  padding-top: 60px;
+  position: relative;
+}
+
+.img-container img {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 20px;
+}
+
+.fa-times {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: #f44336;
+    font-size: 1.5rem;
+}
+.fa-times:hover {
+    font-size: 2rem;
+}
+
+/* input,s width */
+
+input[type=text], input[type=password] {  
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid darkgrey;
+    box-sizing: border-box;
+}
+
+/* Double-sized Checkboxes */
+
+input[type=checkbox] {
+     -ms-transform: scale(1.7);
+     -moz-transform: scale(1.7);
+     -webkit-transform: scale(1.7);
+     -o-transform: scale(1.7);
+      transform: scale(1.7);
+     padding: 10px;
+     margin-right: 10px;
+}
+
+/* button,s style and hover effect */
+
+button {
+    width: 100%;
+    margin: 8px 0;
+    background-color: #04AA6D;
+    color: #f1f1f1;
+    font-size: 25px;
+    border: none;
+    padding: 14px 20px;
+    cursor: pointer;
+    transition: all .3s;
+}
+button:hover {
+    background-color: #f44336;
+}
+
+/* cancel button */
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+    font-size: 20px;
+}
+.cancelbtn:hover {
+    background-color: #04AA6D;
+}
+
+/* add padding to .container to create space Between elements */
+
+.container {
+    padding: 20px;
+    position: relative;
+}
+
+.container.last {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* set show or hide password */
+
+.container i {
+    position: absolute;
+    top: 173px;
+    right: 40px;
+    opacity: .5;
+    z-index: 5;
+    cursor: pointer;
+    /* margin: 10px; */
+}
+
+.container .fa-eye {
+    display: block;
+}
+
+.container .fa-eye-slash {
+    display: none;
+}
+
+.firstbnt {
+    width: 200px;
+    font-size: 1.2rem;
+    border-radius: 20px; 
+    display: none;  
+}
+.firstbnt:hover {
+    cursor: pointer;
+    background-color: #f1f1f1;
+    color: #04AA6D;
+    border: 2px ridge darkgrey;
+}
+
+.close-btn {
+    padding: 150px;
+}
+
+/* create effect zoom on form */
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+    <!-- <link rel="stylesheet" href="./all.css"> // add this file to project for use of fontawsome -->
+    <script src="https://kit.fontawesome.com/8a30399e58.js" crossorigin="anonymous"></script>
+    <title>Login Form</title>
+</head>
+<body>
+
+    <button class="firstbnt" title="Press to enter">Login Form</button>
+
+    <form action="#" class="loginform animate">
+        <div class="img-container">
+            <img src="./avatar/avatar.png" alt="avatar-login-form">
+            <i class="fa fa-times" title="Close"></i>
+            
+        </div>
+
+        <div class="container">
+            <label for="user-name">Username</label>
+            <input type="text" class="text" placeholder="Enter Your Username">
+        
+            <label for="password">Password  </label>
+            <input type="password" class="password" placeholder="Enter Your Password">
+            <i class="far fa-eye "></i>
+            <i class="fa fa-eye-slash "></i>
+            <button type="submit">Login</button>
+
+            <label>
+                <input type="checkbox" class="check-box">Remember Me!
+            </label>
+        </div>
+        <div class="container last" style="background-color: #f1f1f1;">
+        <button type="button" class="cancelbtn">Cancel</button>
+            <a href="#" class="psw">Forget Password ?</a>
+        </div>
+    </form>
+    <script src="./login.js"></script>
+</body>
+</html>
